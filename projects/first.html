@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemangi Enterprises | BMC & Central Government Authorized Contractor</title>
+    <meta name="description" content="Hemangi Enterprises is a BMC and Central Government authorized contractor specializing in instruments, hardware, electrical systems, fabrication, and civil works.">
+    <meta name="keywords" content="BMC contractor, government supplier, instrumentation, hardware, electrical, fabrication, civil works, Mumbai">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            transition: all 0.3s ease;
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-item:not(:last-child):after {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 32px;
+            height: calc(100% - 32px);
+            width: 2px;
+            background: #3b82f6;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-blue-800 text-white p-2 rounded-lg mr-2">
+                    <i class="fas fa-building text-xl"></i>
+                </div>
+                <a href="#home" class="text-xl font-bold text-blue-900">Hemangi <span class="text-blue-600">Enterprises</span></a>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-blue-900 hover:text-blue-600 font-medium">Home</a>
+                <a href="#about" class="text-blue-900 hover:text-blue-600 font-medium">About Us</a>
+                <a href="#services" class="text-blue-900 hover:text-blue-600 font-medium">Services</a>
+                <a href="#projects" class="text-blue-900 hover:text-blue-600 font-medium">Projects</a>
+                <a href="#contact" class="text-blue-900 hover:text-blue-600 font-medium">Contact</a>
+                <a href="#subscriptions" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Manage Subscriptions</a>
+            </nav>
+            
+            <button id="mobile-menu-button" class="md:hidden text-blue-900 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-white w-full px-4 pb-4">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="text-blue-900 hover:text-blue-600 font-medium py-2 border-b">Home</a>
+                <a href="#about" class="text-blue-900 hover:text-blue-600 font-medium py-2 border-b">About Us</a>
+                <a href="#services" class="text-blue-900 hover:text-blue-600 font-medium py-2 border-b">Services</a>
+                <a href="#projects" class="text-blue-900 hover:text-blue-600 font-medium py-2 border-b">Projects</a>
+                <a href="#contact" class="text-blue-900 hover:text-blue-600 font-medium py-2 border-b">Contact</a>
+                <a href="#subscriptions" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition text-center">Manage Subscriptions</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="hero-section min-h-screen flex items-center justify-center text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Your Trusted Partner for All Your <span class="text-blue-300">Instrumentation</span> and <span class="text-blue-300">Civil Work</span> Needs</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">BMC and Central Government authorized contractor with years of experience in supplying quality products and services.</p>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Get in Touch</a>
+            </div>
+        </section>
+
+        <!-- About Us Page -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">About Hemangi Enterprises</h2>
+                    <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Hemangi Enterprises Office" 
+                             class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-4">Our Story</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Established in 2005, Hemangi Enterprises has grown from a small local supplier to a BMC and Central Government authorized contractor with a reputation for excellence. Our journey has been marked by consistent growth, expanding our service offerings and client base while maintaining our commitment to quality and reliability.
+                        </p>
+                        
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-4">Our Mission</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            To provide high-quality products and services that meet the exacting standards of government and private sector clients, while fostering long-term relationships built on trust, integrity, and exceptional service delivery.
+                        </p>
+                        
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-4">Our Values</h3>
+                        <ul class="list-disc pl-5 text-gray-700 mb-6 space-y-2">
+                            <li><strong>Quality:</strong> We never compromise on the quality of our products and services</li>
+                            <li><strong>Reliability:</strong> Consistent performance that clients can depend on</li>
+                            <li><strong>Integrity:</strong> Ethical business practices in all our dealings</li>
+                            <li><strong>Innovation:</strong> Continuously improving our offerings</li>
+                            <li><strong>Customer Focus:</strong> Tailored solutions for each client's unique needs</li>
+                        </ul>
+                        
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-4">Our Team</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Our team consists of experienced professionals with expertise in various domains including engineering, procurement, and project management. We invest in continuous training to ensure our staff stays updated with the latest industry standards and technologies.
+                        </p>
+                        
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-4">Proprietor</h3>
+                        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-user-tie text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold">Mr. Chetan Vaidya</h4>
+                                    <p class="text-gray-600">Proprietor & Managing Director</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700">
+                                With over 18 years of experience in the industry, Mr. Vaidya leads our team with a hands-on approach and deep technical knowledge. His vision and leadership have been instrumental in establishing Hemangi Enterprises as a trusted name in government contracting.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h4 class="text-xl font-semibold text-blue-800 mb-4">Contact Information</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-center">
+                                    <i class="fas fa-phone-alt text-blue-600 mr-3"></i>
+                                    <span>Mobile: <a href="tel:8080392382" class="text-blue-600 hover:underline">8080392382</a></span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-envelope text-blue-600 mr-3"></i>
+                                    <span>Email: <a href="mailto:vaidya182@gmail.com" class="text-blue-600 hover:underline">vaidya182@gmail.com</a></span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-map-marker-alt text-blue-600 mr-3 mt-1"></i>
+                                    <span>Address: Room no.5, Ramashay Mishra Chawl, Hanuman Tekdi, Yadav Nagar, Sahakar Road, Jogeshwari West, Mumbai 400102</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Page -->
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Services</h2>
+                    <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-4">
+                        Comprehensive solutions tailored to meet the exacting standards of government and private sector clients
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://thumbs.dreamstime.com/b/vector-construction-tools-helmet-white-background-59750949.jpg"
+                                 alt="Supply of Instruments" 
+                                 class="w-full h-full object-cover" height="100">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Supply of Instruments</h3>
+                            <p class="text-gray-700 mb-4">
+                                We provide high-quality instruments for various industrial and government applications, ensuring precision and reliability.
+                            </p>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>Precision measuring instruments</li>
+                                <li>Laboratory equipment</li>
+                                <li>Industrial gauges and meters</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://as2.ftcdn.net/jpg/05/08/66/17/1000_F_508661745_e7QLDlHBIvUK4WlkuYFpHsIH5dErUN5J.jpg" 
+                                 alt="Hardware and Equipment" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Hardware and Equipment</h3>
+                            <p class="text-gray-700 mb-4">
+                                Comprehensive range of hardware and equipment solutions tailored to meet your specific project requirements.
+                            </p>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>Industrial hardware and fasteners</li>
+                                <li>Power tools and accessories</li>
+                                <li>Material handling equipment</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://fes-uae.com/wp-content/uploads/2023/04/electrical-2-2.jpg" 
+                                 alt="Electrical Systems" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Electrical Systems</h3>
+                            <p class="text-gray-700 mb-4">
+                                Expert solutions for all your electrical needs, from installation to maintenance of complex electrical systems.
+                            </p>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>Electrical wiring and cabling</li>
+                                <li>Switchgear and control panels</li>
+                                <li>Lighting solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 4 -->
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                 alt="M.S and S.S Fabrication" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">M.S and S.S Fabrication</h3>
+                            <p class="text-gray-700 mb-4">
+                                Precision fabrication services for mild steel and stainless steel components with strict quality control measures.
+                            </p>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>Structural steel fabrication</li>
+                                <li>Sheet metal works</li>
+                                <li>Custom metal components</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 5 -->
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://media.istockphoto.com/id/1032912050/photo/e-waste-heap-from-discarded-laptop-parts.jpg?s=612x612&w=0&k=20&c=0GhFIqXKK1bRzdyMugLkB5Dj7spnwmhgVhRJEwBgoO8=" 
+                                 alt="Electronics" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Electronics</h3>
+                            <p class="text-gray-700 mb-4">
+                                Supply and installation of electronic components and systems for industrial and commercial applications.
+                            </p>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>Control systems and automation</li>
+                                <li>Embedded systems</li>
+                                <li>Security and surveillance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 6 -->
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://media.istockphoto.com/id/472147093/photo/construction-worker.jpg?s=170667a&w=0&k=20&c=2e18bftUG8N_xn3RsoX2xPp3DNmDCV6BDqU68aHJW-8=" 
+                                 alt="Civil Works" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Civil Works</h3>
+                            <p class="text-gray-700 mb-4">
+                                Complete civil construction services including planning, execution, and quality assurance for all types of projects.
+                            </p>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>Building construction</li>
+                                <li>Road works and paving</li>
+                                <li>Structural works</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Page -->
+        <section id="projects" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Projects</h2>
+                    <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-4">
+                        Showcasing our successfully completed projects that demonstrate our expertise and commitment to quality
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="https://charlgrove.qa/wp-content/uploads/2015/03/c2f5ae1f834c2841333fb7222eba8cd7.jpg" 
+                                 alt="Government Supply Project" 
+                                 class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 left-0 bg-blue-600 text-white px-3 py-1 text-sm font-medium">
+                                Government Project
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">BMC Instrument Supply</h3>
+                            <p class="text-gray-700 mb-4">
+                                Supply and installation of precision measuring instruments for BMC water department across 12 locations in Mumbai.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-gray-500">Completed: Jan 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="https://tristateec.com/wp-content/uploads/2021/11/2021-10-industrial-electrical-services-columbia-sc.jpg" 
+                                 alt="Electrical System Installation" 
+                                 class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 left-0 bg-blue-600 text-white px-3 py-1 text-sm font-medium">
+                                Commercial Project
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">Commercial Complex Electrical Works</h3>
+                            <p class="text-gray-700 mb-4">
+                                Complete electrical system design and installation for a 15-story commercial complex in Andheri.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-gray-500">Completed: Aug 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="https://media.istockphoto.com/id/2152481069/photo/building-undergoing-repairs.jpg?s=612x612&w=0&k=20&c=GjK4EdMF0wMz5jY4a2ALAVMuaHJ2g7gUov2CQICSjGc=" 
+                                 alt="Civil Construction Project" 
+                                 class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 left-0 bg-blue-600 text-white px-3 py-1 text-sm font-medium">
+                                Government Project
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">Municipal School Renovation</h3>
+                            <p class="text-gray-700 mb-4">
+                                Complete civil renovation of a BMC-run school building including structural repairs and finishing works.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-gray-500">Completed: Mar 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Contact Us</h2>
+                    <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-4">
+                        Get in touch with us for your project requirements or any inquiries. Our team is ready to assist you.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <!-- Contact Form -->
+                    <div class="lg:w-1/2">
+                        <form id="contactForm" class="contact-form bg-gray-50 p-8 rounded-lg shadow-md">
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name <span class="text-red-500">*</span></label>
+                                <input type="text" id="name" name="name" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address <span class="text-red-500">*</span></label>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number <span class="text-red-500">*</span></label>
+                                <input type="tel" id="phone" name="phone" required
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Your Message <span class="text-red-500">*</span></label>
+                                <textarea id="message" name="message" rows="5" required 
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                        
+                        <!-- WhatsApp Quick Contact -->
+                        <div class="mt-8 bg-green-50 p-6 rounded-lg border border-green-100">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-600 text-white p-3 rounded-full mr-4">
+                                    <i class="fab fa-whatsapp text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold">WhatsApp Quick Contact</h3>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                For immediate assistance, message us directly on WhatsApp. Our team typically responds within 30 minutes during business hours.
+                            </p>
+                            <a href="https://wa.me/918080392382" target="_blank" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg">
+                                <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Info & Map -->
+                    <div class="lg:w-1/2">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-md h-full">
+                            <h3 class="text-2xl font-semibold text-blue-800 mb-6">Contact Information</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                        <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Our Address</h4>
+                                        <p class="text-gray-600">Room no.5, Ramashay Mishra Chawl, Hanuman Tekdi, Yadav Nagar, Sahakar Road, Jogeshwari West, Mumbai 400102</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                        <i class="fas fa-phone-alt text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Phone Number</h4>
+                                        <p class="text-gray-600">
+                                            <a href="tel:8080392382" class="hover:text-blue-600">8080392382</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                        <i class="fas fa-envelope text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Email Address</h4>
+                                        <p class="text-gray-600">
+                                            <a href="mailto:vaidya182@gmail.com" class="hover:text-blue-600">vaidya182@gmail.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                        <i class="fas fa-clock text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Business Hours</h4>
+                                        <p class="text-gray-600">
+                                            Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                            Saturday: 10:00 AM - 4:00 PM<br>
+                                            Sunday: Closed
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h4 class="text-xl font-semibold text-blue-800 mb-4">Our Location</h4>
+                                <div class="h-64 rounded-lg overflow-hidden">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.780103038496!2d72.82721431538478!3d19.16105385423783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7dd8e4e2f3d%3A0x6b6b8f1fc1f1f1f1!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400002!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscriptions Modal (Hidden by default) -->
+        <div id="subscriptions" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-lg shadow-xl p-8 max-w-md w-full mx-4">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-blue-900">Manage Subscriptions</h3>
+                    <button id="close-subscription-modal" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <form class="space-y-4">
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-blue-600">
+                            <span class="ml-2 text-gray-700">Subscribe to newsletter</span>
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-blue-600">
+                            <span class="ml-2 text-gray-700">Receive project updates</span>
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-blue-600">
+                            <span class="ml-2 text-gray-700">Get promotional offers</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                        Update Preferences
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-white text-blue-800 p-2 rounded-lg mr-2">
+                            <i class="fas fa-building text-xl"></i>
+                        </div>
+                        <span class="text-xl font-bold">Hemangi <span class="text-blue-300">Enterprises</span></span>
+                    </div>
+                    <p class="text-blue-200 mb-4">
+                        BMC and Central Government authorized contractor specializing in instrumentation, hardware, electrical systems, fabrication, and civil works.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-200 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-blue-200 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-blue-200 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-blue-200 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-blue-200 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-blue-200 hover:text-white">About Us</a></li>
+                        <li><a href="#services" class="text-blue-200 hover:text-white">Services</a></li>
+                        <li><a href="#projects" class="text-blue-200 hover:text-white">Projects</a></li>
+                        <li><a href="#contact" class="text-blue-200 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-blue-200 hover:text-white">Supply of Instruments</a></li>
+                        <li><a href="#services" class="text-blue-200 hover:text-white">Hardware & Equipment</a></li>
+                        <li><a href="#services" class="text-blue-200 hover:text-white">Electrical Systems</a></li>
+                        <li><a href="#services" class="text-blue-200 hover:text-white">Fabrication Works</a></li>
+                        <li><a href="#services" class="text-blue-200 hover:text-white">Civil Works</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-300"></i>
+                            <span class="text-blue-200">Room no.5, Ramashay Mishra Chawl, Hanuman Tekdi, Yadav Nagar, Sahakar Road, Jogeshwari West, Mumbai 400102</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-blue-300"></i>
+                            <a href="tel:8080392382" class="text-blue-200 hover:text-white">8080392382</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-300"></i>
+                            <a href="mailto:vaidya182@gmail.com" class="text-blue-200 hover:text-white">vaidya182@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-blue-300">
+                <p>&copy; 2023 Hemangi Enterprises. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Subscription modal
+        const subscriptionLinks = document.querySelectorAll('a[href="#subscriptions"]');
+        const subscriptionModal = document.getElementById('subscriptions');
+        const closeSubscriptionModal = document.getElementById('close-subscription-modal');
+        
+        subscriptionLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                subscriptionModal.classList.remove('hidden');
+            });
+        });
+        
+        closeSubscriptionModal.addEventListener('click', () => {
+            subscriptionModal.classList.add('hidden');
+        });
+        
+        // Close modal when clicking outside
+        subscriptionModal.addEventListener('click', (e) => {
+            if (e.target === subscriptionModal) {
+                subscriptionModal.classList.add('hidden');
+            }
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send this data to your server
+            // For demo purposes, we'll just show an alert
+            alert(`Thank you for your message, ${name}! We'll get back to you soon.`);
+            
+            // Reset form
+            contactForm.reset();
+            
+            // In a real implementation, you would:
+            // 1. Send data to your backend
+            // 2. The backend would send email/WhatsApp notifications
+            // 3. Show a success message to the user
+        });
+    </script>
+</body>
+</html>
